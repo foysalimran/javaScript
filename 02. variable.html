@@ -8,8 +8,13 @@
             margin: 0;
             padding: 0;
         }
+        ul, ol{
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
         body{
             font-family: 'Poppins', sans-serif;
+            line-height: 1.8em;
         }
         .text-center{
             text-align: center;
@@ -20,15 +25,104 @@
             border-bottom: 1px solid #f1f1f1;
             font-weight: 400;
         }
+        code, pre, xmp {
+    background: #f1f1f1;
+    display: block;
+    padding: 15px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+            white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+        .container{
+            margin: 0 auto;
+            display: block;
+            width: 1170px;
+        }
+        p{
+            background: #000;
+            color: #fff;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #f1f1f1;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
 </head>
 <body>
+   <div class="container">
     <h1 class="text-center">javaScript Variables</h1>
     
-    <h2 class="text-center">.String</h2>
+    <h2 class="text-center">* How to write?</h2>
+
+<xmp>
+<script>
+var avariablename = "Value of this variable";
+var nextvariablename = "Value of next variable";
+var anothervariablename = "Value of another variable"
+document.write('<div class="text-center">',avariablename,'</div>', "<br>");
+document.write('<div class="text-center">',nextvariablename,'</div>', "<br>");
+document.write('<div class="text-center">',anothervariablename,'</div>', "<br>");
+</script>
+</xmp>
+
     <script>
+        var avariablename = "Value of this variable";
+        var nextvariablename = "Value of next variable";
+        var anothervariablename = "Value of another variable"
+        document.write('<div class="text-center">',avariablename,'</div>', "<br>");
+        document.write('<div class="text-center">',nextvariablename,'</div>', "<br>");
+        document.write('<div class="text-center">',anothervariablename,'</div>', "<br>");
         
     </script>
+    <h3 class="text-center">=> Another short way to print</h3>
+<xmp>
+<script>
+document.write('<div class="text-center">',avariablename,'</div>', "<br>", '<div class="text-center">',nextvariablename,'</div>', "<br>", '<div class="text-center">',anothervariablename,'</div>', "<br>", );    
+</script>
+</xmp>    
+<script>
+document.write('<div class="text-center">',avariablename,'</div>', "<br>", '<div class="text-center">',nextvariablename,'</div>', "<br>", '<div class="text-center">',anothervariablename,'</div>', "<br>", );
+</script>
+   
+   <p class="text-center">
+       => javaScript variables are case sencetive. It's mean if we declear variable like A = 10, and a = 20, It's mean there we called 2 variables. Not one. Example:<br> 
+   </p>
+<xmp>
+<script>
+var a = "LowerCase variable";
+var A = "UpperCase variable";
+document.write('<div class="text-center">',a,'</div>', "<br>");
+document.write('<div class="text-center">',A,'</div>', "<br>");
+</script>
+</xmp>
+<script>
+var a = "LowerCase variable";
+var A = "UpperCase variable";
+document.write('<div class="text-center">',a,'</div>', "<br>");
+document.write('<div class="text-center">',A,'</div>', "<br>");
+</script>
+   
+    <h2 class="text-center">* Nameing</h2>
+    
+    <ol>
+        
+        <li>We should use meaningful name.</li>
+        <li>We can use (a-z) or (A-Z) letters, (0-9) numbers, _ underscore, or $ doller sign to decleare a variable.</li>
+        <li>Variable name should start with letters, _ underscore, and $ doller and it can't be start with any numbers.</li>
+        <li>javaScript variables are case sencetive, it's mean name and NAME is totally two different variables.</li>
+        <li>We can't use any resurve keywords as variable name. example: var, let, function, else etc. can't be use as variable name. Check resurve keywords full list <a href="https://www.w3schools.com/js/js_reserved.asp">here</a></li>
+        
+    </ol>
+    <p class="text-center">
+        Best practice for nameing is:
+        aLongNameHere or a_long_name_here
+    </p>
+    
+    </div>
+    
 </body>
 </html>
