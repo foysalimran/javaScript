@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>03. Operators</title>
+</head>
+<body>
+   
+   <script type="text/javascript">
+    /*
+Opearators in JavaScript:
+1. Arithmetics Opearators
+2. Comparison Opearators
+3. Logical Opearators
+4. Assignment Opearators
+5. Conitional Opearators
+*/
+
+// 1. ARITHMETICS OPERATORS : It use for + - * /
+
+// How to Addition / +
+
+var a = 20;
+var b = 10;
+
+console.log(a + b);
+
+// How to substraction / -
+
+var a = 20;
+var b = 10;
+
+console.log(a - b);
+
+// How to multiplication / *
+
+var a = 5;
+var b = 10;
+
+console.log( a * b);
+
+// How to Divition / /
+
+var a = 20;
+var b = 10;
+
+console.log(a / b);
+
+// How to Modulas / %
+
+var a = 13;
+var b = 5;
+
+console.log(a % b);
+
+// How to Increment / ++
+var x = 4;
+x++;
+
+console.log(x);
+
+// How to Dicriment / --
+
+var x = 4;
+x--;
+
+console.log(x);
+
+// 2. COMARISON OPERATORS
+
+// How to == Equal
+
+// Is it equal?
+var a = 10;
+var b = 10;
+console.log( a == b);
+
+// Is it equal?
+var a = 20;
+var b = 10;
+console.log(a == b);
+
+// How to !- Not Equal
+
+// Is it not Equal?
+var a = 10;
+var b = 10;
+console.log( a != b);
+
+// Is it not Equal?
+var a = 15;
+var b = 10;
+console.log(a != b);
+
+// How to greaterthan
+
+// is it graterthan ?
+var a = 20;
+var b = 10;
+console.log(a > b);
+
+// is it graterthan ?
+var a = 20;
+var b = 30;
+console.log(a > b);
+
+// How to not greater than
+
+// Is it not graterthan?
+a = 20;
+b = 30;
+console.log(a < b);
+
+// Is it not graterthan?
+a = 20;
+b = 10;
+console.log(a < b);
+
+// greaterthan or equal
+
+// Is it graterthan or equal?
+
+a = 10;
+b = 10;
+console.log(a >= b);
+
+// Is it graterthan or equal?
+
+a = 9;
+b = 11;
+console.log(a >= b);
+
+// Not graterthan or equal
+
+// Is it not graterthan or not equal?
+a = 10;
+b = 10;
+console.log(a <= b);
+
+// Is it not graterthan or not equal?
+a = 10;
+b = 9;
+console.log(a <= b);
+
+
+// Some more practices--
+var x = 7;
+
+if (x<10) {
+  console.log(x);
+  console.log('This number',x,'is smaller then 10');
+} else if(x<20){
+  console.log('This number',x,'is smaller than 20');
+}else{
+  console.log('This number',x,'is greater than 10 or 20');
+}
+
+// another programme
+
+var n = 21;
+var m = 22;
+
+if (n>m){
+  console.log("n is greater than m")
+} else if(n==m){
+  console.log("n is equal to m")
+}
+else{
+  console.log("n is smaller than m")
+}
+
+// another programme
+
+var n = 9;
+
+if (8 == n){
+  console.log('n is equal to 8');
+} else{
+  console.log('n is not equal to 8');
+}
+/*
+NOTE: GOOD PRACTICE IS USE SCALER VALUE ON LEFT SIDE FOR AVOIDING ASSINMENT/N SETED TO IF IN IF STATEMENT -  ISSUE
+*/
+
+// 3. LOGICAL OPERATORS
+
+// && And operator: useto between 2 operands. If both operands true the programme will exicute
+
+a = 10;
+b = 8;
+if ((a = 10) && (b = 8)){
+  console.log("a is graterthan b");
+} else{
+  console.log("a is not graterthan b");
+}
+
+// || Or operator: useto between 2 operands. If one is true another one is false the programme will exicute.
+
+a = 10;
+b = 8;
+
+if((a = 5) || (b = 8)){
+  console.log("True")
+} else{
+  console.log("False")
+}
+
+// ! Not operator: use to before a statement. If statement is true it will return false and if statement is false it will return false.
+
+
+// NEED TO UNDERSTAND MORE
+
+
+// 4. ASSIGNMENT OPEARATORS
+
+// Simple assignment operator / = : We already used this operator. It use for assigning value of variables.
+// Example:
+
+a = 10;
+
+// Assition or + & Simple assignment operators: 
+var a = 10;
+a += 10;
+
+console.log(a);
+
+// SUbstraction or - simple assignment operators
+
+var a = 10;
+a -= 5;
+
+console.log(a);
+
+// multiplication or * simple assignment operators
+
+var a = 10;
+
+a *= 5;
+
+console.log(a);
+
+// Divition or / simple assignment operators
+
+var a = 10;
+a /= 2;
+
+console.log(a);
+
+    </script>
+    
+</body>
+</html>
