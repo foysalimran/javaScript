@@ -1,4 +1,8 @@
 
+/***********************************
+* Variables and data types
+*/
+
 // PREMITIVE DATA TYPES: Number, String, Boolean, Undefined, Null
 
 var firstName = 'John';
