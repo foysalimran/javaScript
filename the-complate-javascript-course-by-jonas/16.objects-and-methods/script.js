@@ -10,10 +10,12 @@ var john = {
     job: 'teacher',
     isMarried: false,
     calcAge: function()  {
-        return 2018 - this.birthYear;
+        this.age = 2018 - this.birthYear;
     }
  };
 
-console.log(john.calcAge(1990));
+john.calcAge();
+console.log(john);
+
 
 
