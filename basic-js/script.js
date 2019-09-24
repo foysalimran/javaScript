@@ -260,3 +260,75 @@ height = 23;
    console.log('There is a draw!');
  }
 */
+
+
+ /********************************************
+ * Functions
+ */
+function calculateAge(birthYear) {
+  return 2018 - birthYear;
+}
+
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1948);
+var ageJane = calculateAge(1969);
+console.log(ageJohn, ageMike, ageJane);
+
+
+function yearsUntilRetirement (year, firstName) {
+  var age = calculateAge(year);  // 28
+  var retirement = 65 - age;
+  if(retirement > 0) {
+  console.log(firstName + ' reatires in ' + retirement + ' years.');
+} else {
+  console.log(firstName + ' is already retired.');
+  
+}
+}
+
+yearsUntilRetirement(1990, 'John');
+yearsUntilRetirement(1948, 'Mike');
+yearsUntilRetirement(1969, 'Jane');
+
+// function myfunction() {
+//   var x = 45;
+//   var y = 65;
+
+//   var z = x + y;
+
+//   console.log(z);
+// }
+
+// myfunction();
+
+/*
+function myfunction() {
+  alert('This is my function');
+}
+myfunction();
+*/
+
+function sayHi(name) {
+  
+
+  if (name) {
+    console.log('Hello ' + name);
+  } else {
+    console.log('Hello! How are you?');
+  }
+}
+
+function isEven( number ) {
+  if(number % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+sayHi("Rahim");
+sayHi();
+
+console.log(isEven(12));
+console.log(isEven(13));
+console.log(isEven(29));
