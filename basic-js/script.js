@@ -309,8 +309,6 @@ myfunction();
 */
 
 function sayHi(name) {
-  
-
   if (name) {
     console.log('Hello ' + name);
   } else {
@@ -332,3 +330,64 @@ sayHi();
 console.log(isEven(12));
 console.log(isEven(13));
 console.log(isEven(29));
+
+ /********************************************
+ * Functions Statements and Expressions
+ */
+
+// Function declaration
+// function whatDoYouDo(job, firstName) {}
+
+ // Function Expression
+var whatDoYouDo = function(job, firstName) {
+  switch(job) {
+    case 'teacher':
+      return firstName + ' teaches kids how to code';
+    case 'driver':
+      return firstName + ' dirves a cab in lisbon.'
+    case 'designer':
+      return firstName + ' design beautiful websites!';
+    default:
+      return firstName + ' does something else.'
+  }
+}
+
+console.log(whatDoYouDo('teacher', 'John'));
+console.log(whatDoYouDo('designer', 'Jane'));
+console.log(whatDoYouDo('retired', 'Mark'));
+
+
+ /********************************************
+ * Arrays
+ */
+
+// Initialize new array
+var names = ['John', 'Mark', 'Jane'];
+var years = new Array(1990, 1969, 1948);
+
+console.log(names[2]);
+console.log(names.length);
+
+
+// Mutate array data
+names[1] = 'Ben';
+console.log(names);
+names[names.length] = 'Mary';
+console.log(names);
+
+// Different data types
+var john = ['John', 'Smith', 1990, 'designer', false];
+
+john.push('blue');
+john.unshift('Mr.');
+console.log(john);
+
+john.pop();
+john.pop();
+john.shift();
+console.log(john);
+
+console.log(john.indexOf(1990));
+
+var isDesigner = john.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
+console.log(isDesigner);
