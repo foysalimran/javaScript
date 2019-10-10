@@ -246,3 +246,62 @@ switch(rollNo) {
     default:
         console.log('Others');
 }
+
+
+/********************************
+ * Loops
+ *  - For statement
+ *  - do ... while statemnt
+ *  - while statement
+ *  - break statement
+ *  - Continue statement
+ */
+
+ // For loop
+
+//  for (var i = 0; i < 10; i++) {
+//     console.log('Go ' + i + ' step')
+//  }
+
+
+ // Do while loop
+// var num;
+//  do {
+//     console.log('Inside the Loop');
+//     num = prompt('Enter the number: ');
+
+//  } while (num < 10)
+
+// While statement
+// var num = 0;
+
+// while (num < 10) {
+//     console.log('Inside the loop');
+//     num = prompt('Enter the number:');
+// }
+
+
+var num = 20;
+while(num < 10) {
+    console.log('Inside the loop');
+    num = prompt('Enter the number: ');
+}
+
+// Break statement
+
+for (var i = 0; i < 10; i++) {
+    if (i === 5) {
+        break;
+    }
+    console.log('i is now at ' + i);
+}
+
+// Continue statement
+
+for (var i = 0; i < 10; i++) {
+    if(i === 5){
+        console.log('5 is skipped');
+        continue;
+    }
+    console.log('i is now at ' + i);
+}
