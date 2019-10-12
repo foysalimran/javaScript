@@ -305,3 +305,64 @@ for (var i = 0; i < 10; i++) {
     }
     console.log('i is now at ' + i);
 }
+
+
+// ARRAYS
+
+var newArray = new Array ('Rafiq', 'Salam', 'Karim', 'Shaifq');
+
+console.log(newArray);
+
+
+
+var newArr = ['rafiq', 'Shafiq', 'Karim', 'Jabbar'];
+console.log(newArr);
+
+console.log(newArr[3]);
+console.log(newArr.length);
+console.log(newArr['length']);
+
+
+for (var i = 0; i < newArr.length; i++) {
+    console.log('Name: ' + newArr[i]);
+}
+
+// Arrays functions
+
+// -- Push a new array end of existing array
+newArray.push('Foysal');
+console.log(newArray);
+
+// -- Remove a new array end of existing array
+
+newArray.pop();
+console.log(newArray);
+
+// -- Remove a new array starting of an existing array
+newArr.shift();
+console.log(newArr);
+
+// -- Adding new array starting of an existing array
+
+newArray.unshift(['Imran']);
+console.log(newArray);
+
+// -- Know index number for a specific array item
+console.log(newArray.indexOf('Karim'));
+
+// -- Remove array item using index number
+newArray.splice(1, 2);
+console.log(newArray);
+
+// Add splice data to another variable
+
+var aNewArray = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+var spliceArr = aNewArray.splice(3);
+
+console.log(aNewArray);
+console.log(spliceArr);
+
+// Copy array
+
+var arrName = aNewArray;
+console.log(aNewArray, arrName)
