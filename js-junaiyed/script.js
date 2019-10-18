@@ -366,3 +366,64 @@ console.log(spliceArr);
 
 var arrName = aNewArray;
 console.log(aNewArray, arrName)
+
+
+
+/***********************
+* OBJECT
+ */
+
+ var rahim = {
+    fullName: 'Rahim Miya',
+    age: 21,
+    address: 'Dhaka',
+    job: "Job Holder",
+    welcomeMsg: function() {
+        console.log('Hello There. How are you?');
+    }  
+ }
+
+ console.log(rahim);
+
+ console.log(rahim.fullName);
+
+console.log(rahim['fullName']);
+
+
+rahim.zipCode = 1206,
+
+console.log(rahim.zipCode);
+
+
+rahim.job= 'Student',
+
+console.log(rahim.job);
+
+// rahim.welcomeMsg = function() {
+//     console.log('Hello There');
+// }
+
+rahim.welcomeMsg();
+
+
+/// Object in Array
+
+var objArr = {
+    normal: 'Normal Item',
+    name: ['rahim', 'karim', 'rafiq', 'shafiq'],
+    age:    [10, 20, 30, 40]
+}
+
+console.log(objArr.name[2]);
+
+
+var arrObj = [
+    'Zonaiyed',
+    {
+        name: 'Rafiq',
+        age: 21,
+        job: 'Student',
+    },
+    'Bangladesh'
+]
+console.log(arrObj[1].name);
