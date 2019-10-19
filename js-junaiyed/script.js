@@ -427,3 +427,68 @@ var arrObj = [
     'Bangladesh'
 ]
 console.log(arrObj[1].name);
+
+
+/*********************************
+ * Functions
+ * 
+ */
+
+function funcName(){
+    console.log('Hello, I am from the function.');
+}
+funcName();
+
+
+
+var funcName2 = function() {
+    console.log('This is from another function');
+}
+funcName2();
+
+
+function sumMatchine(a, b) {
+    var sum = a + b;
+    return sum;
+}
+console.log(sumMatchine(2, 2));
+console.log(sumMatchine(4, 4));
+
+function printMyName(name, age) {
+    console.log('My name is: ' + name + ' and I am ' + age + ' years old!');
+}
+printMyName('Foysal Imran', 28);
+
+function callMyName(name, callback) {
+    var myAge = 28;
+    console.log('Is it interesting? Yes it is Mr.' + name);
+    callback(myAge);
+}
+
+function hello(age){
+    console.log('I am passed through arguement and my age is: ' + age);
+}
+callMyName('Foysal', hello);
+
+
+
+// function welcomeMsg(name) {
+//     console.log('Welcome Mr. ' + name);
+//     return function options(menu) {
+//         console.log('Do you like ' + menu + ' Mr. ' + name);
+//     }
+// }
+// welcomeMsg('Zonayed Ahmed')('Coffee');
+
+
+function changeValue (a) {
+    console.log('Value of a inside function before changeing: ' + a);
+    a = 10;
+    console.log('Value of a inside function after changeing: ' + a);
+    return a;
+}
+
+var a = 100;
+console.log('Value of a before changeing function is applied ' + a);
+changeValue(a);
+console.log('Value of a after changeing function is applied: ' + a);
