@@ -369,6 +369,7 @@ console.log(aNewArray, arrName)
 
 
 
+
 /***********************
 * OBJECT
  */
@@ -492,3 +493,39 @@ var a = 100;
 console.log('Value of a before changeing function is applied ' + a);
 changeValue(a);
 console.log('Value of a after changeing function is applied: ' + a);
+
+
+/*******************************
+* DRY Principal
+ */
+
+ function printText() {
+    console.log('This text is written by Foysal Imran');
+ } 
+
+ printText();
+
+function addTwoNumber(x, y) {
+    var sum = x + y;
+    console.log('Sum of ' + x + ' and ' + y + ' is: ' + sum);
+}
+
+addTwoNumber(5, 10);
+addTwoNumber(10, 15);
+addTwoNumber(15, 20);
+addTwoNumber(25, 25);
+addTwoNumber(30, 35);
+addTwoNumber(40, 45);
+addTwoNumber(50, 55);
+
+
+function welcomeMessage(name) {
+    console.log('Welcome Mr. ' + name);
+}
+
+welcomeMessage('Foysal');
+welcomeMessage('Imran');
+welcomeMessage('Rahi');
+welcomeMessage('Sadia');
+welcomeMessage('Habib');
+
