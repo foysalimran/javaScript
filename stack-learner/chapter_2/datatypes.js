@@ -51,3 +51,4 @@ console.log(Number.MIN_SAFE_INTEGER);
 
 // String multiply with number
 console.log(1 / 0); // Infinite
+console.log('abc' * 10); // NaN
