@@ -23,3 +23,6 @@ console.log(Boolean(null)); // null is falsy
 
 console.log(Boolean(undefined)); // undefined is falsy
 console.log(Boolean(NaN)); // NaN is falsy
+
+var n = false;
+console.log(n.toString()); // Converting a Boolean to String
