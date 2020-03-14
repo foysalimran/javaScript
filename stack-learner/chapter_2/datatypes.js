@@ -21,6 +21,7 @@
 /**
  * NUMBERS
  */
+/*
 var intNumber = 2334; // Integer number
 var floNumber = 12.344; // Floating number
 console.log(intNumber);
@@ -52,3 +53,34 @@ console.log(Number.MIN_SAFE_INTEGER);
 // String multiply with number
 console.log(1 / 0); // Infinite
 console.log('abc' * 10); // NaN
+*/
+
+/**
+ * String
+ */
+/*
+var str = 'This is a string with single quote';
+var str1 = 'THis is a string with double quote';
+var str2 = `This is a string with backtick`;
+
+var str3 = String('This is a string with single quote with costractor');
+var str4 = String('This is a string with double quote with constractor');
+var str5 = String(`This is a string in backtick with constractor`);
+var str6 = String(22);
+var str7 = String(2.33);
+
+// console.log(str, str1, str2, str3, str4, str5, str6, str7);
+
+console.log(str);
+console.log(str1);
+console.log(str2);
+console.log(str3);
+console.log(str4);
+console.log(str5);
+console.log(str6);
+console.log(str7);
+*/
+
+/**
+ * Booleans
+ */
