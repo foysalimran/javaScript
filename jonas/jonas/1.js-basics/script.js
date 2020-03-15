@@ -43,7 +43,7 @@ console.log(
     age +
     ' year old ' +
     job +
-    '. Is he merried? ' +
+    '. Is he married? ' +
     isMarried
 );
 
@@ -53,7 +53,7 @@ console.log(
     age +
     ' years old ' +
     job +
-    '. is he merried? ' +
+    '. is he married? ' +
     isMarried
 );
 
@@ -67,7 +67,7 @@ alert(
     age +
     ' years old ' +
     job +
-    '. is he merried? ' +
+    '. is he married? ' +
     isMarried
 );
 
@@ -75,4 +75,22 @@ var lastName = prompt('What is his last Name?');
 console.log(firstName + ' ' + lastName);
 */
 
-// NEXT LECTURE: 07 about math operators
+// NEXT LECTURE: 07 Basic Operators
+var now, yearJohn, yearMark;
+now = 2020;
+ageJohn = 28;
+ageMark = 33;
+
+// Math operators
+yearJohn = now - ageJohn;
+yearMark = now - ageMark;
+
+console.log(yearJohn);
+
+console.log(now + 2);
+console.log(now * 2);
+console.log(now / 2);
+
+// Logical operators
+var johnOlder = ageJohn > ageMark;
+console.log(johnOlder);
