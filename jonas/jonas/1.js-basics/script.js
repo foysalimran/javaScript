@@ -74,7 +74,7 @@ alert(
 var lastName = prompt('What is his last Name?');
 console.log(firstName + ' ' + lastName);
 */
-
+/*
 // NEXT LECTURE: 07 Basic Operators
 var now, yearJohn, yearMark;
 now = 2020;
@@ -105,5 +105,37 @@ var a = NaN;
 console.log(typeof x);
 console.log(typeof y);
 console.log(a);
-
+*/
 // 08 Operators Precedence
+var now = 2020;
+var yearJohn = 1989;
+var fullAge = 18;
+
+// Multiple operators
+var isFullAge = now - yearJohn >= fullAge; // true
+console.log(isFullAge);
+
+// Grouping
+var ageJohn = now - yearJohn;
+var ageMark = 35;
+var avarage = (ageJohn + ageMark) / 2;
+console.log(avarage);
+
+// Multiple assignments
+var x, y;
+x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
+console.log(x, y);
+
+// More operators
+
+x *= 2;
+console.log(x);
+
+x += 10;
+
+x = x + 1;
+x += 1;
+x++; // increment
+console.log(x);
+x--;
+console.log(x); // Decrement
