@@ -92,5 +92,18 @@ console.log(now * 2);
 console.log(now / 2);
 
 // Logical operators
-var johnOlder = ageJohn > ageMark;
+var johnOlder = ageJohn < ageMark;
 console.log(johnOlder);
+
+// typeof operator
+console.log(typeof johnOlder);
+console.log(typeof ageJohn);
+console.log(typeof 'Mark is older than John');
+var x;
+var y = null;
+var a = NaN;
+console.log(typeof x);
+console.log(typeof y);
+console.log(a);
+
+// 08 Operators Precedence
