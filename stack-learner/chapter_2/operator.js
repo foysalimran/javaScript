@@ -56,3 +56,26 @@ a = 20;
 
 console.log(a >= b); // false
 console.log(a <= b); // true
+
+var c = '50';
+var d = 50;
+
+console.log(c === d);
+
+console.log(c !== d);
+
+// Logical Operators
+
+// &&
+// ||
+// !
+
+// Bitwise Operator
+// &
+// |
+// ~
+// ^
+// <<
+// >>
+
+console.log(typeof 'String');
