@@ -102,3 +102,9 @@ var xyz = null;
 
 console.log(abc);
 console.log(xyz);
+
+var hex = 0xff; // Hexadecimal number put 0x
+console.log(hex);
+
+var oct = 0756; // Octal number put 0
+console.log(oct);
