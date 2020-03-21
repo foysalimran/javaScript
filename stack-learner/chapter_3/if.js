@@ -11,8 +11,16 @@ if (a < b) {
   console.log('B is greater than A');
 }
 
-var n = 5;
+// Find Even and Odd number
+
+var n = 4;
+
+console.log(n % 2);
+
+if (n % 2 == 0) {
+  console.log(n + ' is Even Number');
+}
 
 if (n % 2 == 1) {
-  console.log('N is odd number');
+  console.log(n + ' is Odd Number');
 }
