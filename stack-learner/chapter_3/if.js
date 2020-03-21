@@ -10,3 +10,9 @@ if (a > b) {
 if (a < b) {
   console.log('B is greater than A');
 }
+
+var n = 5;
+
+if (n % 2 == 1) {
+  console.log('N is odd number');
+}
